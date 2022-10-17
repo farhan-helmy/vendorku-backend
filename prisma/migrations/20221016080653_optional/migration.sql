@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Transaction" ALTER COLUMN "amount" DROP NOT NULL,
+ALTER COLUMN "date" DROP NOT NULL,
+ALTER COLUMN "transactionType" DROP NOT NULL;

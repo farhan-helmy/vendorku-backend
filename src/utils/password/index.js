@@ -14,13 +14,12 @@ async function hashPassword(password) {
 
 async function verifyPassword(password, userPassword) {
     try {
-        var isMatch = await bcrypt.compare(password, userPassword)
 
-        if (!isMatch) {
-            return false
+        if (await bcrypt.compare(password, userPassword)) {
+            return true
         }
-        return true
-
+        return false
+       
     } catch (e) {
         return e
     }
