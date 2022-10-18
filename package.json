@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "env-cmd -f ./src/config/dev.env nodemon src/index.js",
-    "start:prod": "yarn prisma migrate deploy && node src/index.js"
+    "start:prod": "yarn prisma migrate deploy && env-cmd -f .env node src/index.js"
   },
   "author": "",
   "license": "ISC",
