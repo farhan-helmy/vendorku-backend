@@ -40,6 +40,8 @@ app.use(
       "http://localhost:4000",
       "http://127.0.0.1:4001",
       "http://localhost:4001",
+      "http://dev.lawangemas.my",
+      "https://dev.lawangemas.my",
     ],
     credentials: true,
   })
